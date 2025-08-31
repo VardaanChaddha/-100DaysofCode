@@ -8,7 +8,9 @@ int main()
     int a, b, c, det, k, h;
     printf("enter the 3 numbers a b c:   ");
     scanf("%d %d %d", &a, &b, &c);
+    
     det = pow((b), 2) - 4 * a * c;
+    
     if (det > 0)
     {
         k = (-b + pow((pow((b), 2) - 4 * a * c), 1 / 2)) / 2 * a;
@@ -23,5 +25,7 @@ int main()
     }
     else if (det < 0)
         printf("the roots are complex");
+    
     return 0;
+
 }

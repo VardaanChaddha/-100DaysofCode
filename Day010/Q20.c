@@ -1,34 +1,46 @@
-// Q20: Write a program to display the day of the week based on a number (1–7) using switch-case.
+//Q20: Write a program to display the day of the week based on a number (1–7) using switch-case.
 
 #include <stdio.h>
 
-int main()
-{
-    int day;
-    printf("Enter the Day:   ");
-    scanf("%d", &day);
-    switch (day)
+int main(){
+    int a;
+    printf("Enter a number (1-7):   ");
+    scanf("%d",&a);
+
+    switch (a)
     {
     case 1:
-        printf("MONDAY");
+        printf("Monday");
         break;
+
     case 2:
-        printf("TUESDAY");
+        printf("Tuesday");
         break;
+
     case 3:
-        printf("WEDNESDAY");
+        printf("Wednesday");
         break;
+
     case 4:
-        printf("THURSDAY");
+        printf("Thursday");
         break;
+
     case 5:
-        printf("FRIDAY");
+        printf("Friday");
         break;
+    
     case 6:
-        printf("SATURDAY");
+        printf("Saturday");
         break;
+
+    case 7:
+        printf("Sunday");
+        break;
+        
     default:
-        printf("SUNDAY");
+        printf("Wrong Input");
+        break;
     }
+
     return 0;
 }

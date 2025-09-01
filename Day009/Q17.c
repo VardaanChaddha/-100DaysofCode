@@ -5,27 +5,32 @@
 
 int main()
 {
-    int a, b, c, det, k, h;
-    printf("enter the 3 numbers a b c:   ");
-    scanf("%d %d %d", &a, &b, &c);
-    
+    int a, b, c, det, x, y;
+
+    printf("Enter the first number:   ");
+    scanf("%d", &a);
+
+    printf("Enter the second number:   ");
+    scanf("%d", &b);
+
+    printf("Enter the third number:   ");
+    scanf("%d", &c);
+
     det = pow((b), 2) - 4 * a * c;
-    
+
     if (det > 0)
     {
-        k = (-b + pow((pow((b), 2) - 4 * a * c), 1 / 2)) / 2 * a;
-        h = (-b - pow((pow((b), 2) - 4 * a * c), 1 / 2)) / 2 * a;
-        printf("the roots are real and distinct %d\n %d\n", k, h);
+        x = (-b + (pow(det, 1 / 2))) / 2 * a;
+        y = (-b - (pow(det, 1 / 2))) / 2 * a;
+        printf("\nRoots are real and different: %d and %d", x, y);
+    }
+    else if (det < 0)
+    {
+        printf("\nRoots are complex");
     }
     else if (det == 0)
     {
-        k = -b / 2 * a;
-        h = k;
-        printf("the roots are real and equal %d\n %d\n", k, h);
+        x = (-b + (pow(det, 1 / 2))) / 2 * a;
+        printf("\nRoots are real and same: %d", x);
     }
-    else if (det < 0)
-        printf("the roots are complex");
-    
-    return 0;
 }
-

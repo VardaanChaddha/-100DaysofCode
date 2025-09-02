@@ -12,16 +12,26 @@ int main()
     printf("Enter the third side:   ");
     scanf("%d", &c);
 
-    if (a == b && b == c && a == c)
+    if (a < b + c && b < a + c && c < a + b)
     {
-        printf("\nIt is an Equilateral triangle");
-    }
-    else if (a == b || b == c || a == c)
-    {
-        printf("\nIt is an Isosceles triangle");
+        printf("\nTriangle is Valid");
+        if (a == b && b == c && a == c)
+        {
+            printf("\nIt is an Equilateral triangle");
+        }
+        else if (a == b || b == c || a == c)
+        {
+            printf("\nIt is an Isosceles triangle");
+        }
+        else
+        {
+            printf("\nIt is a Scalene triangle");
+        }
     }
     else
-        (printf("\nIt is a Scalene triangle"));
+    {
+        printf("\nTriangle is Not Valid");
+    }
 
     return 0;
 }

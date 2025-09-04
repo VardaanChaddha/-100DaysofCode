@@ -56,10 +56,12 @@ int main(){
     case 12:
         printf("December, 31 days");
         break;
+        
     default:
         printf("Wrong Input");
         break;
     }
 
     return 0;
+
 }

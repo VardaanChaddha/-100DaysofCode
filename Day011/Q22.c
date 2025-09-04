@@ -5,7 +5,6 @@
 int main()
 {
     int cost, sell, perc, profit, loss;
-
     printf("Enter Cost price:   ");
     scanf("%d", &cost);
     printf("Enter Selling price:   ");
@@ -29,4 +28,5 @@ int main()
     }
 
     return 0;
+
 }

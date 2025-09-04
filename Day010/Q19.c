@@ -28,6 +28,7 @@ int main()
             printf("\nIt is a Scalene triangle");
         }
     }
+
     else
     {
         printf("\nTriangle is Not Valid");
@@ -35,3 +36,4 @@ int main()
 
     return 0;
 }
+

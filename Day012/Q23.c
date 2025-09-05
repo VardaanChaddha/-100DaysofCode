@@ -9,6 +9,7 @@ More than 30 days: Membership Cancelled.*/
 int main()
 {
     int days, fine;
+    
     printf("Enter number of late days:      ");
     scanf("%d", &days);
 
@@ -37,4 +38,5 @@ int main()
     }
 
     return 0;
+
 }

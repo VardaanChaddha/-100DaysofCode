@@ -15,7 +15,6 @@ int main()
 
     switch (op)
     {
-
     case '+':
         ans = a + b;
         printf("%d", ans);
@@ -47,5 +46,5 @@ int main()
     }
 
     return 0;
-
 }
+

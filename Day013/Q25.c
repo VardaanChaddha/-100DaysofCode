@@ -43,10 +43,9 @@ int main()
             ans = b % a;
             printf("%d", ans);
         }
-        
-        
         break;
     }
 
     return 0;
+
 }

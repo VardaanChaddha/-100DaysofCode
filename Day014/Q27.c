@@ -5,7 +5,7 @@
 int main()
 {
   int n, sum=0, count=0, start=1;
-  printf("enter the number:     ");
+  printf("Enter a number:     ");
   scanf(" %d", &n);
 
   while(count<n)
@@ -18,4 +18,5 @@ int main()
   printf("%d", sum);
 
   return 0;
+
 }

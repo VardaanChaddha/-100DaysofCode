@@ -4,7 +4,6 @@
 
 int main()
 {
-
     int n, opp = 1;
     printf("Enter a number: ");
     scanf("%d", &n);
@@ -17,4 +16,5 @@ int main()
     }
 
     return 0;
+
 }
